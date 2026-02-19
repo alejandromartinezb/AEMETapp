@@ -1,0 +1,78 @@
+body.dark {
+    background-color: rgb(14, 16, 50) !important;
+    color: #f8fafc !important;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Controles (dropdowns y botones) */
+.controls-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.control-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+/* Contenedor del informe */
+.informe-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    /* Modo claro por defecto */
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    /* Para que el padding interno no se escape */
+    transition: all 0.3s ease;
+}
+
+/* Texto del informe */
+.informe-texto {
+    /* Mantiene saltos de línea y espacios de la AEMET (llega un archivo de texto con saltos de línea) */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    /* Fuente: sans-serif. A veces, los números en las temperaturas no salen alineados. He intentado arreglaro con tabular-num pero sin éxito */
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-variant-numeric: tabular-nums;
+
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #1e293b;
+    margin: 0;
+    padding: 35px;
+
+    /* Retoque de tabs originales */
+    tab-size: 4;
+    -moz-tab-size: 4;
+}
+
+/* Ajustes específicos del modo oscuro */
+
+body.dark .informe-wrapper {
+    /* Color ligeramente distinto al body para que destaque */
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .informe-texto {
+    color: #e2e8f0;
+    background: rgba(15, 23, 42, 0.3);
+}
+
+.informe-texto::first-line {
+    font-size: large;
+    font-weight: bold;
+    color: #60a5fa;
+    /* Azul claro para el título en modo oscuro */
+}

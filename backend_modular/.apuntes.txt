@@ -1,0 +1,7 @@
+Apuntes y conceptos sobre tecnologías utilizadas:
+
+Express: Framework minimalista de Node.js
+CORS: Cross-Origin resource sharing
+    Discrimina las llamadas según su origen
+
+Middleware: Frangmento de lógica que se inyecta antes de una petición

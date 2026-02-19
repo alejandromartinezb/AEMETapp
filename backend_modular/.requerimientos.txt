@@ -1,0 +1,11 @@
+- Búsqueda de provincias
+    Retorna todas las provincias (desde un json local)
+
+- Búsqueda por provincia diaria (hoy)
+    /api/prediccion/provincia/hoy/{provincia}
+
+- Búsqueda de municipios
+    /api/maestro/municipios -> Retorna todos los municipios con su información, como su id
+
+- Búsqueda por municipio diaria
+    /api/prediccion/especifica/municipio/diaria/{municipio}
