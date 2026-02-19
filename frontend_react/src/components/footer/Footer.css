@@ -1,0 +1,40 @@
+.main-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+    padding: 20px 5%;
+    margin-top: auto; /* Empuja el footer abajo en layouts flex */
+    color: #666;
+    font-family: sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.footer-content a {
+    color: #0070c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste móvil */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
