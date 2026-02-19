@@ -14,6 +14,9 @@ function useFetch(url) {
 
         // 1. Creamos un controlador para poder cancelar la petición
         const abortController = new AbortController();
+        // AbortController es una interfaz de JavaScript que permite cancelar operaciones asíncronas, como peticiones fetch, antes de que terminen.
+        // Evita leaks de memoria si el usuario se va a otra sección antes de que termine la petición.
+        // Si la url cambia muy rapido, useEffect se lanza varias veces. El controlador cancela la petición y solo se ejecuta la última (Apartado 4 en comentarios).
 
         const cargarDatos = async () => {
             setCargando(true);
