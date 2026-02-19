@@ -1,5 +1,5 @@
 {
-  "name": "ejemplo-backend",
+  "name": "backend-aemet",
   "version": "1.0.0",
   "description": "Backend para aplicación de consultas a la API de la AEMET",
   "license": "ISC",
