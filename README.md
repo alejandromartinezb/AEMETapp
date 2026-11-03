@@ -18,6 +18,10 @@ Asegúrate de tener instalado:
 - npm (incluido con Node.js)
   - npm -v
 
+# Recuerda estos pasos
+- Solicita tu propia clave de la API de la AEMET (consulta el archivo .env.example)
+- Introduce ahí tu clave y renombra el archivo para dejarlo solo como .env
+
 # Instalación y ejecución del Backend
 - cd backend_modular
 - npm install
