@@ -15,3 +15,8 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Configuración y Secretos
+.env
+.env.local
+.env.*.local
